@@ -1,0 +1,537 @@
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chobi - Contact</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- lineicons css -->
+    <link rel="stylesheet" href="css/lineicons/lineicons.css" />
+    <!-- fonts css -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header id="header-section" class="fixed-top bg-white border-bottom py-3">
+      <div class="container-fluid px-4">
+        <div class="row align-items-center">
+          <div class="col-auto d-none d-md-block">
+            <a
+              class="link text-decoration-none d-flex align-items-center"
+              href="images.html"
+              ><i class="lni lni-image me-1"></i>Explore</a
+            >
+          </div>
+          <div class="col-auto col-md text-end">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" width="100" />
+            </a>
+          </div>
+          <div class="col text-end">
+            <button
+              class="btn btn-outline-primary rounded-pill d-inline-flex align-items-center me-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <i class="lni lni-user me-1"></i>Log in
+            </button>
+            <button
+              class="btn btn-primary rounded-pill d-inline-flex align-items-center"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+    <!-- all modals -->
+    <section id="all-modals">
+      <!-- login modal -->
+      <div class="login-modal">
+        <div class="modal fade" id="loginModal">
+          <div class="modal-dialog">
+            <div class="modal-content" style="padding: 15px">
+              <div class="modal-header border-bottom-0">
+                <img src="images/logo.png" alt="" width="100" />
+                <button
+                  class="btn-close"
+                  type="button"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="mb-0" action="">
+                  <div class="mb-3">
+                    <label class="form-label" for="">Email Address</label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="example@mail.com"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label" for="">Password</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                  <div class="d-grid mb-4">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                  </div>
+                  <div class="float-end">
+                    <a class="text-decoration-none" href="#"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- login modal end -->
+      <!-- signup modal -->
+      <div class="signup-modal">
+        <div class="modal fade" id="signupModal">
+          <div class="modal-dialog">
+            <div class="modal-content" style="padding: 15px">
+              <div class="modal-header border-bottom-0">
+                <img src="images/logo.png" alt="" width="100" />
+                <button
+                  class="btn-close"
+                  type="button"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3 mb-0" action="">
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">First Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="John"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">Last Name</label>
+                    <input class="form-control" type="text" placeholder="Doe" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Address</label>
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id=""
+                      rows="5"
+                      placeholder="Eg: Street, City, State, Country"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Email Address</label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="example@mail.com"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">Password</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">Confirm Password</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                  <div class="d-grid mt-4">
+                    <button class="btn btn-primary" type="submit">
+                      Signup
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- signup modal end -->
+    </section>
+    <!-- all modals end -->
+    <!-- categories section -->
+    <section id="categories-section" class="bg-white border-bottom">
+      <div class="container-fluid px-4">
+        <div class="nav-scroller py-1">
+          <nav class="nav justify-content-between">
+            <a
+              class="nav-item nav-link link-secondary active"
+              href="category.html"
+              >All</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Landscape</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Fashion</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Sky</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Earth</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Architecture</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Lifestyle</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Forest</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Flowers</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Animals</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >People</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Nature</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Sea</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Coding</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Space</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Christmas</a
+            >
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- categories section end -->
+    <!-- contact us section -->
+    <section id="contact-us-section" class="bg-white py-5 my-5">
+      <div class="container-fluid px-4">
+        <div class="row">
+          <!-- contact form -->
+          <div class="col-12 col-lg-8 mb-5 mb-lg-0">
+            <div class="contact-form">
+              <!-- section title -->
+              <div class="section-title text-center mb-5">
+                <h3 class="fs-3 fw-bold mb-0">Contact Us</h3>
+              </div>
+              <!-- section title end -->
+              <form class="row g-3 mb-0" action="">
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="">First Name</label>
+                  <input class="form-control" type="text" placeholder="John" />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="">Last Name</label>
+                  <input class="form-control" type="text" placeholder="Doe" />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="">Email Address</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="example@mail.com"
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="">Phone Number</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="(+880) 1234-567890"
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="">Message</label>
+                  <textarea
+                    class="form-control"
+                    name=""
+                    id=""
+                    rows="5"
+                    placeholder="Write message"
+                  ></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button class="btn btn-primary rounded-pill" type="submit">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- contact form end -->
+          <!-- contact info -->
+          <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+            <div class="contact-info">
+              <div class="card">
+                <div class="card-body p-4">
+                  <!-- contact box wrap -->
+                  <div class="contact-box-wrap">
+                    <div class="contact-box d-flex align-items-center mb-4">
+                      <div class="icon text-primary me-3">
+                        <i class="lni lni-phone fs-2"></i>
+                      </div>
+                      <div class="details">
+                        <h6 class="fw-bold">Phone:</h6>
+                        <a
+                          class="text-decoration-none text-secondary"
+                          href="tel:(+880) 1234-567890"
+                          >(+880) 1234-567890</a
+                        >
+                      </div>
+                    </div>
+                    <div class="contact-box d-flex align-items-center mb-4">
+                      <div class="icon text-primary me-3">
+                        <i class="lni lni-whatsapp fs-2"></i>
+                      </div>
+                      <div class="details">
+                        <h6 class="fw-bold">Whatsapp:</h6>
+                        <a
+                          class="text-decoration-none text-secondary"
+                          href="https://wa.me/01123456789"
+                          >(+880) 1123-456789</a
+                        >
+                      </div>
+                    </div>
+                    <div class="contact-box d-flex align-items-center mb-4">
+                      <div class="icon text-primary me-3">
+                        <i class="lni lni-envelope fs-2"></i>
+                      </div>
+                      <div class="details">
+                        <h6 class="fw-bold">Email:</h6>
+                        <a
+                          class="text-decoration-none text-secondary"
+                          href="mailto:info@chobi.com"
+                          >info@chobi.com</a
+                        >
+                      </div>
+                    </div>
+                    <div class="contact-box d-flex align-items-center">
+                      <div class="icon text-primary me-3">
+                        <i class="lni lni-map-marker fs-2"></i>
+                      </div>
+                      <div class="details">
+                        <h6 class="fw-bold">Address:</h6>
+                        <p class="text-secondary mb-0">
+                          65 Nutan Paltan Line (1st Floor), Dhaka
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- contact box wrap end -->
+                  <!-- socials widget -->
+                  <div class="socials-widget mt-5">
+                    <h3 class="h4 text-primary mb-3">Connect with us</h3>
+                    <ul>
+                      <li>
+                        <a class="facebook-bg" href="#" target="_blank"
+                          ><i class="lni lni-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="twitter-bg" href="#" target="_blank"
+                          ><i class="lni lni-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="instagram-bg" href="#" target="_blank"
+                          ><i class="lni lni-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="youtube-bg" href="#" target="_blank"
+                          ><i class="lni lni-youtube"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="linkedin-bg" href="#" target="_blank"
+                          ><i class="lni lni-linkedin"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- socials widget end -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- contact info end -->
+        </div>
+      </div>
+    </section>
+    <!-- contact us section end -->
+    <!-- footer section -->
+    <footer id="footer-section" class="border-top">
+      <!-- footer top -->
+      <div class="footer-top py-5">
+        <div class="container-fluid px-4">
+          <div class="row">
+            <!-- footer about -->
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+              <div class="footer-about">
+                <img class="mb-3" src="images/logo.png" alt="" />
+                <p class="text-secondary mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis necessitatibus quod dolor, cupiditate, ratione
+                  quis exercitationem, officiis consequatur libero asperiores
+                  adipisci doloribus quaerat modi reiciendis. Est, distinctio
+                  pariatur. Id, amet?
+                </p>
+                <div class="socials">
+                  <ul>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- footer about end -->
+            <!-- footer links -->
+            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+              <div class="footer-links">
+                <h5 class="fw-bold mb-3 ps-0 ps-lg-5">Pages</h5>
+                <ul class="mb-0 ps-0 ps-lg-5">
+                  <li>
+                    <a href="images.html">Images</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="mb-0">
+                    <a href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- footer links end -->
+            <!-- footer contacts -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="footer-contacts">
+                <h5 class="fw-bold mb-3">Need Help?</h5>
+                <p class="text-secondary">
+                  <i class="lni lni-map-marker text-dark me-1"></i>65 Nutan
+                  Paltan Line (1st Floor), Dhaka
+                </p>
+                <a
+                  class="mb-3"
+                  href="tel:(+880)
+                1234-567890"
+                  ><i class="lni lni-phone text-dark me-1"></i>(+880)
+                  1234-567890</a
+                >
+                <a class="mb-3" href="https://wa.me/01123456789"
+                  ><i class="lni lni-whatsapp text-dark me-1"></i>(+880)
+                  1123-456789</a
+                >
+                <a class="mb-0 mb-md-3" href="mailto:info@chobi.com"
+                  ><i class="lni lni-envelope text-dark me-1"></i
+                  >info@chobi.com</a
+                >
+              </div>
+            </div>
+            <!-- footer contacts end -->
+          </div>
+        </div>
+      </div>
+      <!-- footer top end -->
+      <!-- footer bottom -->
+      <div class="footer-bottom bg-light text-secondary border-top py-3">
+        <div class="container-fluid px-4">
+          <div class="row align-items-center">
+            <div class="col-12 text-center">
+              <p class="mb-2">
+                &copy; Copyright
+                <span class="text-dark fw-bold">Chobi</span>, All Rights
+                Reserved
+              </p>
+              <p class="mb-0">
+                Designed by
+                <a class="text-decoration-none link-primary" href="#"
+                  >D. H. Shuvo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom end -->
+    </footer>
+    <!-- footer section end -->
+    <!-- jquery -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

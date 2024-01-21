@@ -1,0 +1,814 @@
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chobi - Sky</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- lineicons css -->
+    <link rel="stylesheet" href="css/lineicons/lineicons.css" />
+    <!-- fonts css -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header id="header-section" class="fixed-top bg-white border-bottom py-3">
+      <div class="container-fluid px-4">
+        <div class="row align-items-center">
+          <div class="col-auto d-none d-md-block">
+            <a
+              class="link text-decoration-none d-flex align-items-center"
+              href="images.html"
+              ><i class="lni lni-image me-1"></i>Explore</a
+            >
+          </div>
+          <div class="col-auto col-md text-end">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" width="100" />
+            </a>
+          </div>
+          <div class="col text-end">
+            <button
+              class="btn btn-outline-primary rounded-pill d-inline-flex align-items-center me-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <i class="lni lni-user me-1"></i>Log in
+            </button>
+            <button
+              class="btn btn-primary rounded-pill d-inline-flex align-items-center"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+    <!-- all modals -->
+    <section id="all-modals">
+      <!-- login modal -->
+      <div class="login-modal">
+        <div class="modal fade" id="loginModal">
+          <div class="modal-dialog">
+            <div class="modal-content" style="padding: 15px">
+              <div class="modal-header border-bottom-0">
+                <img src="images/logo.png" alt="" width="100" />
+                <button
+                  class="btn-close"
+                  type="button"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="mb-0" action="">
+                  <div class="mb-3">
+                    <label class="form-label" for="">Email Address</label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="example@mail.com"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label" for="">Password</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                  <div class="d-grid mb-4">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                  </div>
+                  <div class="float-end">
+                    <a class="text-decoration-none" href="#"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- login modal end -->
+      <!-- signup modal -->
+      <div class="signup-modal">
+        <div class="modal fade" id="signupModal">
+          <div class="modal-dialog">
+            <div class="modal-content" style="padding: 15px">
+              <div class="modal-header border-bottom-0">
+                <img src="images/logo.png" alt="" width="100" />
+                <button
+                  class="btn-close"
+                  type="button"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3 mb-0" action="">
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">First Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="John"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">Last Name</label>
+                    <input class="form-control" type="text" placeholder="Doe" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Address</label>
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id=""
+                      rows="5"
+                      placeholder="Eg: Street, City, State, Country"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Email Address</label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="example@mail.com"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">Password</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">Confirm Password</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                  <div class="d-grid mt-4">
+                    <button class="btn btn-primary" type="submit">
+                      Signup
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- signup modal end -->
+      <!-- image modal -->
+      <div class="image-modal">
+        <div class="modal fade" id="imageModal">
+          <div class="modal-dialog px-0 px-md-5" style="max-width: 100%">
+            <div class="modal-content" style="padding: 15px">
+              <div class="modal-header border-bottom-0">
+                <div class="left-buttons">
+                  <button
+                    class="btn btn-outline-dark me-2"
+                    style="
+                      --bs-btn-padding-y: 0.4rem;
+                      --bs-btn-padding-x: 0.5rem;
+                      --bs-btn-font-size: 1.5rem;
+                    "
+                  >
+                    <i class="lni lni-bookmark"></i>
+                  </button>
+                  <button class="btn btn-success rounded-pill">
+                    <i class="lni lni-download"></i>Download
+                  </button>
+                </div>
+                <button
+                  class="btn-close"
+                  type="button"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <!-- image -->
+                  <div class="col-12 col-md-6 mb-5 mb-md-0">
+                    <div class="image">
+                      <img
+                        class="w-100 border"
+                        src="uploads/image-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- image end -->
+                  <!-- image info -->
+                  <div class="col-12 col-md-6">
+                    <div class="image-info ms-0 ms-md-5">
+                      <div class="author mb-4">
+                        <div class="d-flex align-items-center">
+                          <img
+                            class="rounded-circle me-3"
+                            width="50"
+                            height="50"
+                            src="images/team_avatars/avatar-1.jpg"
+                            alt=""
+                          />
+                          <div>
+                            <h4 class="h6 fw-bold mb-0">Paul A. Byrnes</h4>
+                            <p class="text-secondary mb-0">Photographer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description mb-4">
+                        <h3 class="h5 fw-bold">Description:</h3>
+                        <p class="text-secondary mb-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Consequatur non itaque blanditiis voluptates
+                          impedit repudiandae amet perferendis laboriosam,
+                          assumenda nisi.
+                        </p>
+                      </div>
+                      <div class="details mb-4">
+                        <h3 class="h5 fw-bold">Details:</h3>
+                        <div class="row">
+                          <div class="col-auto">
+                            <p class="d-flex align-items-center fw-bold mb-0">
+                              <i class="lni lni-display me-1"></i>1080 x 740
+                            </p>
+                          </div>
+                          <div class="col-auto">
+                            <p class="d-flex align-items-center fw-bold mb-0">
+                              <i class="lni lni-calendar me-1"></i>02-July-2023
+                            </p>
+                          </div>
+                          <div class="col-auto">
+                            <p class="d-flex align-items-center fw-bold mb-0">
+                              <i class="lni lni-folder me-1"></i
+                              ><a
+                                class="link-dark text-decoration-none"
+                                href="category.html"
+                                >Animals</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags">
+                        <h3 class="h5 fw-bold">Tags:</h3>
+                        <a href="tag.html"
+                          ><span class="badge text-bg-dark">earth</span></a
+                        >
+                        <a href="tag.html"
+                          ><span class="badge text-bg-dark">forest</span></a
+                        >
+                        <a href="tag.html"
+                          ><span class="badge text-bg-dark">people</span></a
+                        >
+                        <a href="tag.html"
+                          ><span class="badge text-bg-dark">animals</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- image info end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- image modal end -->
+    </section>
+    <!-- all modals end -->
+    <!-- categories section -->
+    <section id="categories-section" class="bg-white border-bottom">
+      <div class="container-fluid px-4">
+        <div class="nav-scroller py-1">
+          <nav class="nav justify-content-between">
+            <a
+              class="nav-item nav-link link-secondary active"
+              href="category.html"
+              >All</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Landscape</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Fashion</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Sky</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Earth</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Architecture</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Lifestyle</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Forest</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Flowers</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Animals</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >People</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Nature</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Sea</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Coding</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Space</a
+            >
+            <a class="nav-item nav-link link-secondary" href="category.html"
+              >Christmas</a
+            >
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- categories section end -->
+    <!-- explore section -->
+    <section id="explore-section" class="py-5 my-5">
+      <div class="container-fluid px-4">
+        <!-- section title -->
+        <div class="mb-5">
+          <h3 class="fs-3 fw-bold mb-0">
+            Category:<span class="ms-2 text-primary">Sky</span>
+          </h3>
+        </div>
+        <!-- section title end -->
+        <div class="images-grid">
+          <div class="row">
+            <!-- column 1 -->
+            <div class="col-12 col-md-4">
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-1.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-2.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-3.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+            </div>
+            <!-- column 1 end -->
+            <!-- column 2 -->
+            <div class="col-12 col-md-4">
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-4.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-5.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-6.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-7.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+            </div>
+            <!-- column 2 end -->
+            <!-- column 3 -->
+            <div class="col-12 col-md-4">
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-8.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-9.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-10.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+              <!-- single image -->
+              <div class="image mb-3 mb-md-4">
+                <div class="image-overlay">
+                  <div class="overlay-contents">
+                    <button
+                      class="btn btn-light me-2"
+                      style="padding: 8px 9px; font-size: 18px"
+                    >
+                      <i class="lni lni-bookmark"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      style="padding: 8px 9px; font-size: 18px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imageModal"
+                    >
+                      <i class="lni lni-download"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  <img class="w-100" src="uploads/image-2.jpg" alt="" />
+                </a>
+              </div>
+              <!-- single image end -->
+            </div>
+            <!-- column 3 end -->
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="page-pagination mt-4">
+          <ul class="pagination justify-content-center mb-0">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </div>
+        <!-- pagination end -->
+      </div>
+    </section>
+    <!-- explore section end -->
+    <!-- footer section -->
+    <footer id="footer-section" class="border-top">
+      <!-- footer top -->
+      <div class="footer-top py-5">
+        <div class="container-fluid px-4">
+          <div class="row">
+            <!-- footer about -->
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+              <div class="footer-about">
+                <img class="mb-3" src="images/logo.png" alt="" />
+                <p class="text-secondary mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis necessitatibus quod dolor, cupiditate, ratione
+                  quis exercitationem, officiis consequatur libero asperiores
+                  adipisci doloribus quaerat modi reiciendis. Est, distinctio
+                  pariatur. Id, amet?
+                </p>
+                <div class="socials">
+                  <ul>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- footer about end -->
+            <!-- footer links -->
+            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+              <div class="footer-links">
+                <h5 class="fw-bold mb-3 ps-0 ps-lg-5">Pages</h5>
+                <ul class="mb-0 ps-0 ps-lg-5">
+                  <li>
+                    <a href="images.html">Images</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="mb-0">
+                    <a href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- footer links end -->
+            <!-- footer contacts -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="footer-contacts">
+                <h5 class="fw-bold mb-3">Need Help?</h5>
+                <p class="text-secondary">
+                  <i class="lni lni-map-marker text-dark me-1"></i>65 Nutan
+                  Paltan Line (1st Floor), Dhaka
+                </p>
+                <a
+                  class="mb-3"
+                  href="tel:(+880)
+                1234-567890"
+                  ><i class="lni lni-phone text-dark me-1"></i>(+880)
+                  1234-567890</a
+                >
+                <a class="mb-3" href="https://wa.me/01123456789"
+                  ><i class="lni lni-whatsapp text-dark me-1"></i>(+880)
+                  1123-456789</a
+                >
+                <a class="mb-0 mb-md-3" href="mailto:info@chobi.com"
+                  ><i class="lni lni-envelope text-dark me-1"></i
+                  >info@chobi.com</a
+                >
+              </div>
+            </div>
+            <!-- footer contacts end -->
+          </div>
+        </div>
+      </div>
+      <!-- footer top end -->
+      <!-- footer bottom -->
+      <div class="footer-bottom bg-light text-secondary border-top py-3">
+        <div class="container-fluid px-4">
+          <div class="row align-items-center">
+            <div class="col-12 text-center">
+              <p class="mb-2">
+                &copy; Copyright
+                <span class="text-dark fw-bold">Chobi</span>, All Rights
+                Reserved
+              </p>
+              <p class="mb-0">
+                Designed by
+                <a class="text-decoration-none link-primary" href="#"
+                  >D. H. Shuvo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom end -->
+    </footer>
+    <!-- footer section end -->
+    <!-- jquery -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

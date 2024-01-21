@@ -1,0 +1,373 @@
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chobi - Edit Profile</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- lineicons css -->
+    <link rel="stylesheet" href="css/lineicons/lineicons.css" />
+    <!-- fonts css -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header id="header-section" class="fixed-top bg-white border-bottom py-3">
+      <div class="container-fluid px-4">
+        <div class="row align-items-center">
+          <div class="col-auto d-none d-md-block">
+            <a
+              class="link text-decoration-none d-flex align-items-center"
+              href="images.html"
+              ><i class="lni lni-image me-1"></i>Explore</a
+            >
+          </div>
+          <div class="col-auto col-md text-end">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" width="100" />
+            </a>
+          </div>
+          <div class="col text-end">
+            <button
+              class="btn btn-outline-primary rounded-pill d-inline-flex align-items-center d-none d-lg-inline me-2"
+              type="button"
+            >
+              <i class="lni lni-exit me-1"></i>Logout
+            </button>
+            <button
+              class="btn btn-primary d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sidebarMenu"
+            >
+              <i class="lni lni-menu fs-3"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+    <!-- dashboard section -->
+    <section id="dashboard-section" style="margin-top: 64px">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- sidebar -->
+          <div class="col-lg-2 bg-light border-end px-4">
+            <div class="sidebar">
+              <div class="offcanvas-lg offcanvas-end" id="sidebarMenu">
+                <div
+                  class="offcanvas-body d-md-flex flex-column overflow-y-auto"
+                >
+                  <!-- dashboard button -->
+                  <a
+                    class="nav-link text-decoration-none d-flex align-items-center text-uppercase fw-bold mt-5"
+                    href="dashboard.html"
+                    style="font-size: 14px"
+                  >
+                    <i class="lni lni-dashboard fs-5 me-1"></i>Dashboard
+                  </a>
+                  <!-- dashboard button end -->
+                  <!-- image menu -->
+                  <div class="image-menu">
+                    <h6
+                      class="d-flex align-items-center text-uppercase fw-bold text-dark mt-5"
+                      style="font-size: 14px"
+                    >
+                      <i class="lni lni-image text-primary me-1"></i>Images
+                    </h6>
+                    <ul class="nav flex-column" style="font-size: 14px">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link d-flex align-items-center"
+                          href="upload_image.html"
+                          >Upload Image</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link d-flex align-items-center"
+                          href="your_images.html"
+                          >Your Images</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link d-flex align-items-center"
+                          href="bookmarked_images.html"
+                          >Bookmarked Images</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- image menu end -->
+                  <!-- profile menu -->
+                  <div class="profile-menu">
+                    <h6
+                      class="d-flex align-items-center text-uppercase fw-bold text-dark mt-5"
+                      style="font-size: 14px"
+                    >
+                      <i class="lni lni-user text-primary me-1"></i>Profile
+                    </h6>
+                    <ul class="nav flex-column" style="font-size: 14px">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link d-flex align-items-center active"
+                          href="edit_profile.html"
+                          >Edit Profile</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"
+                          >logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- profile menu end -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar end -->
+          <!-- main content -->
+          <main class="col-md-12 col-lg-10 p-0">
+            <div class="main-content py-5 px-4 px-md-5">
+              <!-- edit profile page -->
+              <div class="edit-profile-page">
+                <h3 class="fw-bold text-primary mb-4">Edit Profile:</h3>
+                <form class="row g-3 mb-0" action="">
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">First Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="John"
+                      value="Anthony"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="">Last Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Doe"
+                      value="McCaleb"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Bio</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Eg: I Love Photography"
+                      value="I Love Photography"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Address</label>
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id=""
+                      rows="5"
+                      placeholder="Eg: Street, City, State, Country"
+                    >
+Collage Road, Kushtia, Khulna Division, Bangladesh</textarea
+                    >
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Email Address</label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="example@mail.com"
+                      value="anthony@example.com "
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for=""
+                      >Upload Profile Picture</label
+                    >
+                    <input class="form-control" type="file" name="" id="" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="">Upload Cover Photo</label>
+                    <input class="form-control" type="file" name="" id="" />
+                  </div>
+                  <div class="text-center mt-4">
+                    <button class="btn btn-primary" type="submit">Save</button>
+                  </div>
+                </form>
+              </div>
+              <!-- edit profile page end -->
+            </div>
+          </main>
+          <!-- main content end -->
+        </div>
+      </div>
+    </section>
+    <!-- dashboard section end -->
+    <!-- footer section -->
+    <footer id="footer-section" class="border-top">
+      <!-- footer top -->
+      <div class="footer-top py-5">
+        <div class="container-fluid px-4">
+          <div class="row">
+            <!-- footer about -->
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+              <div class="footer-about">
+                <img class="mb-3" src="images/logo.png" alt="" />
+                <p class="text-secondary mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis necessitatibus quod dolor, cupiditate, ratione
+                  quis exercitationem, officiis consequatur libero asperiores
+                  adipisci doloribus quaerat modi reiciendis. Est, distinctio
+                  pariatur. Id, amet?
+                </p>
+                <div class="socials">
+                  <ul>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-dark" href="#" target="_blank"
+                        ><i class="lni lni-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- footer about end -->
+            <!-- footer links -->
+            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+              <div class="footer-links">
+                <h5 class="fw-bold mb-3 ps-0 ps-lg-5">Pages</h5>
+                <ul class="mb-0 ps-0 ps-lg-5">
+                  <li>
+                    <a href="images.html">Images</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="mb-0">
+                    <a href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- footer links end -->
+            <!-- footer contacts -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="footer-contacts">
+                <h5 class="fw-bold mb-3">Need Help?</h5>
+                <p class="text-secondary">
+                  <i class="lni lni-map-marker text-dark me-1"></i>65 Nutan
+                  Paltan Line (1st Floor), Dhaka
+                </p>
+                <a
+                  class="mb-3"
+                  href="tel:(+880)
+                1234-567890"
+                  ><i class="lni lni-phone text-dark me-1"></i>(+880)
+                  1234-567890</a
+                >
+                <a class="mb-3" href="https://wa.me/01123456789"
+                  ><i class="lni lni-whatsapp text-dark me-1"></i>(+880)
+                  1123-456789</a
+                >
+                <a class="mb-0 mb-md-3" href="mailto:info@chobi.com"
+                  ><i class="lni lni-envelope text-dark me-1"></i
+                  >info@chobi.com</a
+                >
+              </div>
+            </div>
+            <!-- footer contacts end -->
+          </div>
+        </div>
+      </div>
+      <!-- footer top end -->
+      <!-- footer bottom -->
+      <div class="footer-bottom bg-light text-secondary border-top py-3">
+        <div class="container-fluid px-4">
+          <div class="row align-items-center">
+            <div class="col-12 text-center">
+              <p class="mb-2">
+                &copy; Copyright
+                <span class="text-dark fw-bold">Chobi</span>, All Rights
+                Reserved
+              </p>
+              <p class="mb-0">
+                Designed by
+                <a class="text-decoration-none link-primary" href="#"
+                  >D. H. Shuvo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom end -->
+    </footer>
+    <!-- footer section end -->
+    <!-- jquery -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
