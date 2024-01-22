@@ -22,7 +22,7 @@ A stock photos website template built with Bootstrap 5
 
 ## Preview
 
-[See live demo]()
+[See live demo](https://dev-shuvo.github.io/Chobi-Bootstrap-Template/)
 
 | ![](preview.png) |
 | ---------------- |
